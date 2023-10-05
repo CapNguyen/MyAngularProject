@@ -40,7 +40,9 @@ html, body{
 *{
   box-sizing: border-box;
 }
-
+.date_picker{
+  text-align: left;
+}
 .timetable{
   @include make-tiles;
   display: grid;

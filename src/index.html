@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>MyTimetable</title>
@@ -7,8 +8,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
 
+<body>
+  <header>
+<h2 style="text-align: center;">Timetable</h2>
+  </header>
+  <section>
+    <form action="date_box" method="GET">
+      <table style="border:none">
+        <tr>
+          <td class="date_picker">From:</td>
+          <td><input type="date" name="from" /></td>
+          <td rowspan="2"><input style="height: 45px;" type="submit" value="Enter" /></td>
+        </tr>
+        <tr>
+          <td class="date_picker">To:</td>
+          <td><input type="date" name="to" /></td>
+        </tr>
+      </table>
+    </form>
+    <app-root></app-root>
+  </section>
+  <footer>
+<h3>Create by Cap Nguyen</h3>
+  </footer>
+</body>
+
+</html>
