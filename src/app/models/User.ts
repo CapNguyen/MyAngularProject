@@ -1,3 +1,5 @@
+import { Campus } from "./Campus";
+
 export class User {
   id!: number;
   code!: String;
@@ -7,5 +9,5 @@ export class User {
   password!: String;
   phone_number!: String;
   role!: String;
-  campus_id!: String;
+  campus ?: Campus;
 }
